@@ -33,7 +33,7 @@ export default function App() {
                 placeholder="Enter email"
                 style={{alignSelf: 'flex-start'}}></TextInput>
             </View>
-            <Text>iconright</Text>
+            <Text>iconright1</Text>
           </View>
         </View>
       </View>
