@@ -28,7 +28,7 @@ export default function App() {
               paddingHorizontal: 12,
             }}>
             <View style={{flexDirection: 'row', alignItems: 'center'}}>
-              <Text>iconleft</Text>
+              <Text>123</Text>
               <TextInput
                 placeholder="Enter email"
                 style={{alignSelf: 'flex-start'}}></TextInput>
