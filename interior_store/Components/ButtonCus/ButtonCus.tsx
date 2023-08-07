@@ -3,11 +3,9 @@ import React from 'react';
 import {Colors} from '../../constants';
 import styles from './styles';
 
-export default function ButtonCus({title, style}: ButtonCusProps) {
+export default function ButtonCus({title, style, onPress}: ButtonCusProps) {
   return (
-    <TouchableOpacity
-      onPress={() => {}}
-      style={[styles.buttonContainer, style]}>
+    <TouchableOpacity onPress={onPress} style={[styles.buttonContainer, style]}>
       <Text style={styles.titleText}>{title}</Text>
     </TouchableOpacity>
   );
@@ -16,4 +14,5 @@ export default function ButtonCus({title, style}: ButtonCusProps) {
 interface ButtonCusProps {
   title: string;
   style?: any;
+  onPress?: () => void;
 }
