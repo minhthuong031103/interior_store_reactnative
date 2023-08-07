@@ -1,6 +1,12 @@
 import {createStackNavigator} from '@react-navigation/stack';
 import {Routes} from './Routes';
-import {Login, OnBoarding, Register} from '../screens';
+import {
+  HomeScreen,
+  Login,
+  OnBoarding,
+  ProductDetail,
+  Register,
+} from '../screens';
 import {NavigationContainer} from '@react-navigation/native';
 import {navigationRef} from './NavigationService';
 
@@ -13,6 +19,8 @@ export const StackNavigator = () => (
     <Stack.Screen name={Routes.Login} component={Login} />
     <Stack.Screen name={Routes.Register} component={Register} />
     <Stack.Screen name={Routes.OnBoarding} component={OnBoarding} />
+    <Stack.Screen name={Routes.HomeScreen} component={HomeScreen} />
+    <Stack.Screen name={Routes.ProductDetail} component={ProductDetail} />
   </Stack.Navigator>
 );
 export const Navigator = () => {
